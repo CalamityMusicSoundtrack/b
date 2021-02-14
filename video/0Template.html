@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>KING【Kanaria】</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Different versions of KING - Kanaria">
+    <meta name="keywords" content="KING - Kanaria">
+    <meta name="theme-color" content="#fb1814">
+    <meta property="og:type" content="Music">
+    <meta property="og:title" content="KING【Kanaria】">
+    <meta property="og:description" content="Different versions of KING - Kanaria">
+    <meta property="og:url" content="http://king.rf.gd">
+    <meta property="og:image" content="">
+    <link rel="stylesheet" href="../thing.css">
+</head>
+
+<body onload='document.getElementById("myVideo").play();' onselectstart="return false" ondragstart="return false">
+    <script src="../thing.js"></script>
+    <noscript>
+          <meta http-equiv="refresh" content="0;url=noscript.php">
+       </noscript>
+    <video autoplay loop id="myVideo">
+         <source src="" ondblclick="openFullscreen(myVideoDiv);" oncontextmenu="openFullsceenMobile();" type="video/mp4">
+         </video>
+    <div id="ClickToPlay" class="ClickToPlay" onclick="PlayVideo();">
+        <p>Please click here to play video</p>
+    </div>
+
+    <style>
+        @media (max-width: 1025px) {
+            .ClickToPlay {
+                display: flex !important;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        
+        .ClickToPlay {
+            display: none;
+            background-color: #808080d9;
+            width: 100%;
+            height: 100%;
+            z-index: 4;
+            font-size: 50px;
+        }
+    </style>
+
+    <script>
+        function PlayVideo() {
+            document.getElementById("myVideo").play();
+            document.getElementById("ClickToPlay").remove();
+        }
+    </script>
+
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+</body>
+
+</html>

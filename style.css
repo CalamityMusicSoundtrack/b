@@ -1,0 +1,32 @@
+body,
+html {
+    background-color: black;
+}
+
+#choose {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    outline: solid;
+    outline-color: grey;
+    background-color: black;
+    width: 20.833vw;
+    height: 100%;
+    text-align: center;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#choose img {
+    width: 90%;
+    height: 202.0.260vh;
+    cursor: pointer;
+}
+
+iframe {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 79.010vw;
+    height: 100%;
+}
