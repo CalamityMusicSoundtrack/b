@@ -23,6 +23,15 @@ html {
     cursor: pointer;
 }
 
+.loading-iframe {
+    background: url(images/loading.gif) center center no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 79.010vw;
+    height: 100%;
+}
+
 iframe {
     position: absolute;
     right: 0;
